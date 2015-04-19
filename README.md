@@ -1,5 +1,5 @@
 # Promissory
-A simple convenience method or ES6 Promises.
+A simple convenience method for ES6 Promises.
 
     var myPromise = Promissory().then(handleSuccess,handleFailure);
     ...
@@ -9,6 +9,6 @@ A simple convenience method or ES6 Promises.
         myPromise.reject('Boo');
     }
 
-Promissory accepts a single argument `true` which returns the promise, resolve, and reject as an object rather than attaching the functions to the promise. This is convenient if you plan to expose the promise but need.
+Promissory accepts a single argument `true` which returns the promise, resolve, and reject as an object rather than attaching the functions to the promise. This is convenient if you plan to expose the promise but need the resolve and reject functions separately.
 
 This provides an interface similar to the Promise.defer() concept of Promises/A.
